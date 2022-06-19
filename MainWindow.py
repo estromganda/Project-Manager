@@ -176,8 +176,8 @@ class MainWindow(QMainWindow):
                                             "{}".format((layoutDone.count() / len(lsTasks)) * 100)[:4]
             self.labelStatistic.setText(
                 f"<div style='text-align: center'><span style='background-color:{toDoBackground}'>{taskTodo}% To do\t</span>"
-                f"<span style='background-color:{doingBackground}'>{taskTodo}% Doing\t</span>"
-                f"<span style='background-color:{doneBackground}'>{taskTodo}% Done</span></div>")
+                f"<span style='background-color:{doingBackground}'>{doingTask}% Doing\t</span>"
+                f"<span style='background-color:{doneBackground}'>{doneTask}% Done</span></div>")
             self.labelStatistic.setAlignment(Qt.AlignRight)
         else:
             self.labelStatistic.setText("")
