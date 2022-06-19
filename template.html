@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		#cadre{
+			width: 90%;
+			margin-left: 5%;
+		}
+		#projectName{
+			background-color: #1976D2; 
+			border: 1px solid #009688; 
+			text-align: center;
+			color: black;
+			width: 90%;
+			position: fixed;
+			margin-top: 0px;
+		}
+		#toDoTitle, #doingTitle, #doneTitle{
+			width: 33%;
+			display: inline-block;
+			position: fixed;
+			text-align: center;
+			margin-top: 50px;
+			font-size: 20px;
+		}
+		#doingTitle{
+			margin-left: 33%;
+		}
+		#doneTitle{
+			margin-left: 66%;
+		}
+		#toDo, #doing, #done{
+			width: 32%;
+			height: 900px;
+			overflow: auto;
+			display: inline-block;
+			text-align: center;
+			border-radius: 7px;
+		}
+		#centraleWidget{
+			width: 90%;
+			margin-top: 90px;
+			position: fixed;
+		}
+		#toDo{
+			background-color: #B9F6CA
+		}
+		#doing{
+			background-color: #8BC34A;
+		}
+		#done{
+			background-color: #2E7D32;
+		}
+		.task{
+			width: 90%;
+			border: 1px solid black;
+			border-radius: 7px;
+			margin: 5px;
+			min-height: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="cadre">
+		<h1 id="projectName">:ProjectName</h1>
+		<div id="toDoTitle">To Do</div> <div id="doingTitle">Doing</div> <div id="doneTitle">Done</div>
+		<div id="centraleWidget">
+			<div id="toDo">
+				:toDoContent
+			</div>
+			<div id="doing">
+				:doingContent
+			</div>
+			<div id="done">
+				:doneContent
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
